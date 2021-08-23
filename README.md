@@ -30,4 +30,4 @@
 ## Utils
 
 - curry
-- sleep
+- [sleep](src/utils/sleep/README.md)

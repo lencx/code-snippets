@@ -1,9 +1,9 @@
 
-# 👉 forEach
+## 👉 forEach
 
 > forEach() 方法对数组的每个元素执行一次给定的函数
 
-## 💠 语法
+### 💠 语法
 
 ```js
 arr.forEach(callback(currentValue [, index [, array]])[, thisArg])
@@ -16,11 +16,11 @@ arr.forEach(callback(currentValue [, index [, array]])[, thisArg])
 - `thisArg` [可选] - 当执行回调函数 callback 时，用作 this 的值
 - 返回值 - `undefined`
 
-## ⚠️ 注意
+### ⚠️ 注意
 
 除了抛出异常以外，没有办法中止或跳出 forEach() 循环
 
-## ✍️ 实现
+### ✍️ 实现
 
 ```js
 Array.prototype.myEach = function(callback) {
@@ -30,7 +30,7 @@ Array.prototype.myEach = function(callback) {
 }
 ```
 
-## 🔗 参考链接
+### 🔗 参考链接
 
 - [[MDN] NodeList.prototype.forEach()](https://developer.mozilla.org/zh-CN/docs/Web/API/NodeList/forEach)
 - [[MDN] Array.prototype.forEach()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
