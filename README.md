@@ -27,7 +27,7 @@
 
 </details>
 
-### Utils
+## Utils
 
 - curry
 - sleep
