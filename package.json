@@ -1,0 +1,15 @@
+{
+  "name": "js-wheel",
+  "version": "1.0.0",
+  "description": "javascript 手写系列",
+  "author": "lencx <cxin11314@gmial.com>",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watchAll",
+    "coverage": "jest --coverage"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
