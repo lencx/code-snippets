@@ -1,6 +1,6 @@
-# js-wheel
-
-> 手写 JS 系列
+<p align="center">
+  <img width="120" src="./logo.svg">
+</p>
 
 ## Standard
 
@@ -10,8 +10,8 @@
 
 ### Array
 
-- [forEach](./content/array/forEach/README.md)
-- [map](./content/array/map/README.md)
+- [forEach](/docs/js/array/forEach/index.md)
+- [map](/docs/js/array/map/index.md)
 - filter
 - reduce
 - every
@@ -29,14 +29,12 @@
 
 ## Utils
 
-- [curry](./content/utils/curry/README.md)
-- [sleep](./content/utils/sleep/README.md)
+- [curry](/docs/js/utils/curry/index.md)
+- [sleep](/docs/js/utils/sleep/index.md)
 
 ---
 
-[持续更新]
-
----
+持续更新...
 
 ## License
 
