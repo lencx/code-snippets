@@ -13,7 +13,7 @@ module.exports = {
 		docsDir: 'docs',
     repo: 'lencx/js-wheel',
     repoLabel: '点 ⭐️ 不迷路',
-
+    docsBranch: 'main',
     editLinks: true,
     editLinkText: '编辑此页面',
     lastUpdated: '最后更新时间',
