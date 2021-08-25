@@ -18,6 +18,7 @@
   "homepage": "https://github.com/lencx/js-wheel",
   "devDependencies": {
     "jest": "^27.0.6",
+    "sass": "^1.38.1",
     "vitepress": "^0.16.1"
   }
 }
