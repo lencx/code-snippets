@@ -10,8 +10,8 @@
 
 ### Array
 
-- [forEach](./src/array/forEach/README.md)
-- [map](./src/array/map/README.md)
+- [forEach](./content/array/forEach/README.md)
+- [map](./content/array/map/README.md)
 - filter
 - reduce
 - every
@@ -29,5 +29,15 @@
 
 ## Utils
 
-- curry
-- [sleep](src/utils/sleep/README.md)
+- [curry](./content/utils/curry/README.md)
+- [sleep](./content/utils/sleep/README.md)
+
+---
+
+[持续更新]
+
+---
+
+## License
+
+CC0 1.0 License © 2021 [lencx](https://github.com/lencx)

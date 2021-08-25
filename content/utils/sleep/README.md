@@ -12,6 +12,24 @@ function sleep(ms) {
 }
 ```
 
+#### 📌 测试
+
+```js
+async function testSleep() {
+  console.log('Taking a break...');
+  await sleep(2000);
+  console.log('Two seconds later, showing sleep in a loop...');
+
+  // Sleep in loop
+  for (let i = 0; i < 5; i++) {
+    if (i === 3) await sleep(2000);
+    console.log(i);
+  }
+}
+
+testSleep();
+```
+
 ---
 
 ### 🔗 参考链接

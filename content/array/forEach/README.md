@@ -30,6 +30,17 @@ Array.prototype.myEach = function(callback) {
 }
 ```
 
+#### 📌 测试
+
+```js
+var arr = ['js', 'css', 'html'];
+arr.myEach(function(item) {
+  console.log(item);
+})
+```
+
+---
+
 ### 🔗 参考链接
 
 - [[MDN] NodeList.prototype.forEach()](https://developer.mozilla.org/zh-CN/docs/Web/API/NodeList/forEach)
