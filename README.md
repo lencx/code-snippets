@@ -12,12 +12,16 @@
 
 - [forEach](/docs/js/array/forEach/index.md)
 - [map](/docs/js/array/map/index.md)
-- filter
+- [filter](/docs/js/array/filter/index.md)
 - reduce
 - every
 - some
 
-</details>
+### Object
+
+- new
+- shallow copy
+- deep copy
 
 ### Function
 
@@ -25,12 +29,16 @@
 - apply
 - bind
 
-</details>
+### Event
+
+- EventEmitter
 
 ## Utils
 
 - [curry](/docs/js/utils/curry/index.md)
 - [sleep](/docs/js/utils/sleep/index.md)
+- debounce
+- throttle
 
 ---
 
