@@ -11,9 +11,9 @@ var new_array = arr.map(function callback(currentValue[, index[, array]]) {
 ```
 
 - `callback` - 生成新数组元素的函数，接收一至三个参数
-  - `currentValue` - 数组中正在处理的当前元素
-  - `index` [可选] - 数组中正在处理的当前元素的索引
-  - `array` [可选] - 调用 map() 方法的数组
+  - `currentValue` - 数组中当前正在处理的元素
+  - `index` [可选] - 正在处理的元素在数组中的索引
+  - `array` [可选] - 调用 map 方法的数组本身
 - `thisArg` [可选] - 当执行回调函数 callback 时，用作 this 的值
 - 返回值 - 一个由原数组每个元素执行回调函数的结果组成的新数组
 

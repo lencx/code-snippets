@@ -10,9 +10,9 @@ arr.forEach(callback(currentValue [, index [, array]])[, thisArg])
 ```
 
 - `callback` - 为数组中每个元素执行的函数，接收一至三个参数
-  - `currentValue` - 数组中正在处理的当前元素
-  - `index` [可选] - 数组中正在处理的当前元素的索引
-  - `array` [可选] - 调用 forEach() 方法的数组
+  - `currentValue` - 数组中当前正在处理的元素
+  - `index` [可选] - 正在处理的元素在数组中的索引
+  - `array` [可选] - 调用 forEach 方法的数组本身
 - `thisArg` [可选] - 当执行回调函数 callback 时，用作 this 的值
 - 返回值 - `undefined`
 
