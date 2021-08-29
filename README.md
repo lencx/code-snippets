@@ -2,7 +2,7 @@
   <img width="120" src="./logo.svg">
 </p>
 
-## Standard
+---
 
 - Promise
   - all
@@ -13,7 +13,7 @@
 - [forEach](/docs/js/array/forEach/index.md)
 - [map](/docs/js/array/map/index.md)
 - [filter](/docs/js/array/filter/index.md)
-- reduce
+- [reduce](docs/js/array/reduce/index.md)
 - every
 - some
 
@@ -33,7 +33,7 @@
 
 - EventEmitter
 
-## Utils
+### Utils
 
 - [curry](/docs/js/utils/curry/index.md)
 - [sleep](/docs/js/utils/sleep/index.md)
@@ -47,3 +47,6 @@
 ## License
 
 CC0 1.0 License © 2021 [lencx](https://github.com/lencx)
+
+
+<!-- https://gist.github.com/alexhawkins/28aaf610a3e76d8b8264 -->
