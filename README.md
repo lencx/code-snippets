@@ -40,6 +40,14 @@
 - debounce
 - throttle
 
+### Node.js
+
+#### recursive
+
+- copyDirectory
+- removeDirectory
+- createDirectory
+
 ---
 
 持续更新...
@@ -47,6 +55,3 @@
 ## License
 
 CC0 1.0 License © 2021 [lencx](https://github.com/lencx)
-
-
-<!-- https://gist.github.com/alexhawkins/28aaf610a3e76d8b8264 -->

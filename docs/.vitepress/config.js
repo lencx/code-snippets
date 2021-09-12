@@ -35,6 +35,7 @@ function getArray() {
         { text: 'forEach', link: '/js/array/forEach/' },
         { text: 'map', link: '/js/array/map/' },
         { text: 'filter', link: '/js/array/filter/' },
+        { text: 'reduce', link: '/js/array/reduce/' },
       ],
     }
   ]

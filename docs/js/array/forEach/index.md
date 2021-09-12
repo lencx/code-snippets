@@ -33,10 +33,8 @@ Array.prototype.myEach = function(callback) {
 #### 📌 测试
 
 ```js
-var arr = ['js', 'css', 'html'];
-arr.myEach(function(item) {
-  console.log(item);
-})
+const arr = ['js', 'css', 'html'];
+arr.myEach((item) => console.log(item))
 ```
 
 ---

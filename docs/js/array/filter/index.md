@@ -32,8 +32,8 @@ Array.prototype.myFilter = function (callback, context) {
 ### 📌 测试
 
 ```js
-var arr = [1, 2, 3, 4, 5];
-var newVal = arr.myFilter((i) => i > 3);
+const arr = [1, 2, 3, 4, 5];
+const newVal = arr.myFilter((i) => i > 3);
 console.log(newVal); // [4, 5]
 ```
 

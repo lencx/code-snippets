@@ -32,8 +32,8 @@ Array.prototype.myMap = function(callback) {
 #### 📌 测试
 
 ```js
-var arr = [1, 2, 3];
-var newVal = arr.myMap(i => Math.pow(i, 2));
+const arr = [1, 2, 3];
+const newVal = arr.myMap((i) => Math.pow(i, 2));
 console.log(newVal); // [1, 9, 16]
 ```
 
