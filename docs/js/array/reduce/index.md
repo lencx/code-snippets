@@ -9,7 +9,7 @@
 arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])
 ```
 
-- `callback` - 为数组中每个元素（如果没有提供 `initialValue` 则使用数组中第一个元素）执行的函数，包含四个参数
+- `callback` - 为数组中每个元素（如果没有提供 `initialValue` 则使用数组中第一个元素）执行的函数，包含四个参数：
   - `accumulator` - 累计器累计回调的返回值; 它是上一次调用回调时返回的累积值，或 `initialValue`（见于下方）
   - `currentValue` - 数组中当前正在处理的元素
   - `index` [可选] - 正在处理的元素在数组中的索引，如果提供了 `initialValue`，则起始索引号为 `0`，否则从索引 `1` 起始
@@ -37,7 +37,7 @@ Array.prototype.myReduce = function(callback, initialVal) {
 }
 ```
 
-#### 📌 测试
+### 📌 测试
 
 ```js
 const arr = [1, 2, 3, 4];

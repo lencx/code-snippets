@@ -18,16 +18,22 @@ module.exports = {
     editLinkText: '编辑此页面',
     lastUpdated: '最后更新时间',
 
+    nav: [
+      { text: 'JavaScript', link: '/js/array/forEach/', activeMatch: '^/js/' },
+      { text: 'Node.js', link: '/node/eventemitter/', activeMatch: '^/node/' },
+      { text: 'Utils', link: '/utils/curry/', activeMatch: '^/utils/' },
+    ],
+
     sidebar: {
-      '/': [
-        ...getArray(),
-        ...getUtils(),
-      ],
+      '/guide/': [ { text: '序', link: '/guide' } ],
+      '/js/': getJS(),
+      '/node/': getNode(),
+      '/utils/': getUtils(),
     }
   }
 }
 
-function getArray() {
+function getJS() {
   return [
     {
       text: 'Array',
@@ -37,16 +43,35 @@ function getArray() {
         { text: 'filter', link: '/js/array/filter/' },
         { text: 'reduce', link: '/js/array/reduce/' },
       ],
+    },
+    {
+      text: 'Function',
+      children: [
+        { text: 'call', link: '/js/func/call/' },
+        { text: 'apply', link: '/js/func/apply/' },
+      ],
     }
   ]
 }
+
+function getNode() {
+  return [
+    {
+      text: 'Node.js',
+      children: [
+        { text: 'Event Emitter', link: '/node/eventemitter/' },
+      ],
+    }
+  ]
+}
+
 function getUtils() {
   return [
     {
       text: 'Utils',
       children: [
-        { text: 'curry', link: '/js/utils/curry/' },
-        { text: 'sleep', link: '/js/utils/sleep/' },
+        { text: 'curry', link: '/utils/curry/' },
+        { text: 'sleep', link: '/utils/sleep/' },
       ],
     }
   ]

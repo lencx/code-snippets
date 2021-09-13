@@ -12,7 +12,7 @@ function sleep(ms) {
 }
 ```
 
-#### 📌 测试
+### 📌 测试
 
 ```js
 async function testSleep() {

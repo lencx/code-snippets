@@ -2,13 +2,17 @@
   <img width="120" src="./logo.svg">
 </p>
 
+[“What I Cannot create, I do not understand”](https://www.quora.com/What-did-Richard-Feynman-mean-when-he-said-What-I-cannot-create-I-do-not-understand)  — Richard Feynman
+
 ---
+
+### JS
 
 - Promise
   - all
   - race
 
-### Array
+#### [Array](/docs/js/array)
 
 - [forEach](/docs/js/array/forEach/index.md)
 - [map](/docs/js/array/map/index.md)
@@ -17,30 +21,28 @@
 - every
 - some
 
-### Object
+#### Object
 
 - new
 - shallow copy
 - deep copy
 
-### Function
+#### [Function](/docs/js/func)
 
 - call
 - apply
 - bind
 
-### Event
+### [Utils](/docs/utils)
 
-- EventEmitter
-
-### Utils
-
-- [curry](/docs/js/utils/curry/index.md)
-- [sleep](/docs/js/utils/sleep/index.md)
+- [curry](/docs/utils/curry/index.md)
+- [sleep](/docs/utils/sleep/index.md)
 - debounce
 - throttle
 
 ### Node.js
+
+- EventEmitter
 
 #### recursive
 

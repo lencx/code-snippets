@@ -1,7 +1,7 @@
 {
   "name": "js-wheel",
   "version": "1.0.0",
-  "description": "javascript 手写系列",
+  "description": "JavaScript 手写系列",
   "author": "lencx <cxin11314@gmial.com>",
   "license": "CC0 1.0",
   "scripts": {
@@ -19,6 +19,6 @@
   "devDependencies": {
     "jest": "^27.0.6",
     "sass": "^1.38.1",
-    "vitepress": "^0.16.1"
+    "vitepress": "^0.17.3"
   }
 }
