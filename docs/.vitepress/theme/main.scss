@@ -16,9 +16,11 @@ hr {
 }
 
 .giscus {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: dashed 2px #d8d8d8;
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 8px;
+  border: solid 3px rgba(#000, 0.03);
 }
 
 :root {

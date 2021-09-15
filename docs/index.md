@@ -5,7 +5,7 @@ heroAlt: JS
 actionText: 👉 开始探索
 tagline: 手写系列
 # actionText: Get Started
-actionLink: /guide
+actionLink: /posts/guide/
 # features:
 #   - title:
 #     details:
