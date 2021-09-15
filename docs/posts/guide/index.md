@@ -2,9 +2,9 @@
 
 ## 类别
 
-- [JavaScript](./js/array/forEach/) - JS 标准实现
-- [Node.js](./node/eventemitter/) - 常用 Node 方法实现
-- [Utils](./utils/curry/) - 常用工具函数实现
+- [JavaScript](../../js/array/forEach/) - JS 标准实现
+- [Node.js](../../node/eventemitter/) - 常用 Node 方法实现
+- [Utils](../../utils/curry/) - 常用工具函数实现
 
 ## 参考资料
 
