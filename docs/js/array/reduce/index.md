@@ -1,7 +1,7 @@
 
 ## 👉 reduce
 
-> reduce() 方法对数组中的每个元素执行一次reducer函数(升序执行)，将其结果汇总为单个返回值
+> reduce() 方法对数组中的每个元素执行一次 reducer 函数(升序执行)，将其结果汇总为单个返回值
 
 ### 💠 语法
 
@@ -21,14 +21,15 @@ arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue]
 
 ```js
 Array.prototype.myReduce = function(callback, initialVal) {
-  var accumulator = initialVal;
+  // 初始值是一个可选参数
+  var accumulator = initialVal || undefined;
   // TODO: 未处理边界情况，详情可查看 MDN 文档
   // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce#polyfill
   // 1. 如果 callback 为 null 或非 function，则报错
   // 2. 如果数组为空，并且不存在初始值，则报错
   for (var i = 0; i < this.length; i++) {
-    if (accumulator !== undefined) {
-      accumulator = callback.call(undefined, accumulator, this[i], i, this);
+    if (accumulator) {
+      accumulator = callback.call(accumulator, accumulator, this[i], i, this);
     } else {
       accumulator = this[i];
     }

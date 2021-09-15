@@ -19,6 +19,7 @@ module.exports = {
     lastUpdated: '最后更新时间',
 
     nav: [
+      { text: 'Article', link: '/posts/this', activeMatch: '^/posts/' },
       { text: 'JavaScript', link: '/js/array/forEach/', activeMatch: '^/js/' },
       { text: 'Node.js', link: '/node/eventemitter/', activeMatch: '^/node/' },
       { text: 'Utils', link: '/utils/curry/', activeMatch: '^/utils/' },
@@ -26,11 +27,23 @@ module.exports = {
 
     sidebar: {
       '/guide/': [ { text: '序', link: '/guide' } ],
+      '/posts/': getPosts(),
       '/js/': getJS(),
       '/node/': getNode(),
       '/utils/': getUtils(),
     }
   }
+}
+
+function getPosts() {
+  return [
+    {
+      text: 'Article',
+      children: [
+        { text: 'This 关键字详解', link: '/posts/this' },
+      ],
+    }
+  ]
 }
 
 function getJS() {
