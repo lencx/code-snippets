@@ -19,7 +19,7 @@
   "devDependencies": {
     "jest": "^27.0.6",
     "sass": "^1.38.1",
-    "vitepress": "^0.17.3"
+    "vitepress": "^0.18.0"
   },
   "dependencies": {
     "@giscus/vue": "^1.0.0"
