@@ -1,9 +1,9 @@
 
-## 👉 reduce
+# 👉 reduce
 
 > reduce() 方法对数组中的每个元素执行一次 reducer 函数(升序执行)，将其结果汇总为单个返回值
 
-### 💠 语法
+## 💠 语法
 
 ```js
 arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])
@@ -17,7 +17,7 @@ arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue]
 - `initialValue` [可选] - 作为第一次调用 `callback` 函数时的第一个参数的值。 如果没有提供初始值，则将使用数组中的第一个元素。 在没有初始值的空数组上调用 `reduce` 将报错。
 - 返回值 - 函数累计处理的结果
 
-### ✍️ 实现
+## ✍️ 实现
 
 ```js
 Array.prototype.myReduce = function(callback, initialVal) {
@@ -38,7 +38,7 @@ Array.prototype.myReduce = function(callback, initialVal) {
 }
 ```
 
-### 📌 测试
+## 📌 测试
 
 ```js
 const arr = [1, 2, 3, 4];
@@ -48,6 +48,6 @@ console.log(val) // 10
 
 ---
 
-### 🔗 参考链接
+## 🔗 参考
 
 - [[MDN] NodeList.prototype.reduce()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)

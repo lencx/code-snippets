@@ -1,10 +1,10 @@
-## 👉 sleep
+# 👉 sleep
 
 指定时间内函数暂停执行。 在 C 或 PHP 等编程语言中，可以调用 `sleep(2)` 使程序暂停 2 秒。 Java 有 `Thread.sleep(2000)`，Python 有 `time.sleep(2)`，Go 有 `time.Sleep(2 * time.Second)`。
 
 JavaScript 没有原生的休眠功能，但由于引入了 promises（以及 ES2018 中的 `async/await`），我们可以用一种优雅地方式来实现此功能。
 
-### ✍️ 实现
+## ✍️ 实现
 
 ```js
 function sleep(ms) {
@@ -12,7 +12,7 @@ function sleep(ms) {
 }
 ```
 
-### 📌 测试
+## 📌 测试
 
 ```js
 async function testSleep() {
@@ -32,7 +32,7 @@ testSleep();
 
 ---
 
-### 🔗 参考链接
+## 🔗 参考
 
 - [What is the JavaScript version of sleep()?](https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep)
 - [[C] sleep(3) - Linux man page](https://linux.die.net/man/3/sleep)

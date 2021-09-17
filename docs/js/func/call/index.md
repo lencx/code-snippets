@@ -1,15 +1,15 @@
 
-## 👉 call
+# 👉 call
 
 > call() 方法使用一个指定的 this 值和单独给出的一个或多个参数来调用一个函数
 
-### 💠 语法
+## 💠 语法
 
 ```js
 function.call(thisArg, arg1, arg2, ...)
 ```
 
-### 🟠 示例
+## 🟠 示例
 
 ```js
 function sayHello(message) {
@@ -41,17 +41,17 @@ sayHello.call(obj, 'welcome'); // welcome lencx
 2. 传递给 `sayHello.call` 的任意参数作为 `arg1, arg2, ...` 传递给原始 `sayHello`
 3. 不会对 `obj` 和 `sayHello` 产生副作用。即调用 `call` 不会以任何方式修改原始 `obj` 或 `sayHello`
 
-### 🤔 思考
+## 🤔 思考
 
 > TODO
 
-### ✍️ 实现
+## ✍️ 实现
 
 ```js
 
 ```
 
-### 📌 测试
+## 📌 测试
 
 ```js
 
@@ -59,4 +59,4 @@ sayHello.call(obj, 'welcome'); // welcome lencx
 
 ---
 
-### 🔗 参考链接
+## 🔗 参考

@@ -1,5 +1,5 @@
 module.exports = {
-  title: '✍️ JS',
+  title: '✍️ </>',
   base: '/',
 
   head: [
@@ -11,7 +11,7 @@ module.exports = {
   ],
   themeConfig: {
 		docsDir: 'docs',
-    repo: 'lencx/js-wheel',
+    repo: 'lencx/code-snippets',
     repoLabel: '点 ⭐️ 不迷路',
     docsBranch: 'main',
     editLinks: true,
@@ -21,15 +21,13 @@ module.exports = {
     nav: [
       { text: 'Article', link: '/posts/guide/', activeMatch: '^/posts/' },
       { text: 'JavaScript', link: '/js/array/forEach/', activeMatch: '^/js/' },
-      { text: 'Node.js', link: '/node/eventemitter/', activeMatch: '^/node/' },
-      { text: 'Utils', link: '/utils/curry/', activeMatch: '^/utils/' },
+      { text: 'CSS', link: '/css/mixin/scss', activeMatch: '^/css/' },
     ],
 
     sidebar: {
       '/posts/': getPosts(),
       '/js/': getJS(),
-      '/node/': getNode(),
-      '/utils/': getUtils(),
+      '/css/': getCss(),
     }
   }
 }
@@ -63,29 +61,36 @@ function getJS() {
         { text: 'call', link: '/js/func/call/' },
         { text: 'apply', link: '/js/func/apply/' },
       ],
-    }
-  ]
-}
-
-function getNode() {
-  return [
+    },
     {
       text: 'Node.js',
       children: [
-        { text: 'Event Emitter', link: '/node/eventemitter/' },
+        { text: 'Event Emitter', link: '/js/node/eventemitter/' },
+      ],
+    },
+    {
+      text: 'Utils',
+      children: [
+        { text: 'curry', link: '/js/utils/curry/' },
+        { text: 'sleep', link: '/js/utils/sleep/' },
+      ],
+    },
+    {
+      text: 'Browser',
+      children: [
+        { text: 'getURLParameters', link: '/js/browser/getURLParameters/' },
       ],
     }
   ]
 }
 
-function getUtils() {
+function getCss() {
   return [
     {
-      text: 'Utils',
+      text: 'Scss',
       children: [
-        { text: 'curry', link: '/utils/curry/' },
-        { text: 'sleep', link: '/utils/sleep/' },
+        { text: 'Mixin', link: '/css/mixin/scss' },
       ],
-    }
+    },
   ]
 }

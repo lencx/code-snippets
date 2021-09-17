@@ -3,7 +3,7 @@ home: true
 heroImage: /logo.svg
 heroAlt: JS
 actionText: 👉 开始探索
-tagline: 手写系列
+tagline: 手写 Code 系列
 # actionText: Get Started
 actionLink: /posts/guide/
 # features:

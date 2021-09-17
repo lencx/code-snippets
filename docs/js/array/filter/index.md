@@ -1,8 +1,8 @@
-## 👉 filter
+# 👉 filter
 
 > filter() 方法创建一个新数组, 返回符合函数的条件的所有元素。
 
-### 💠 语法
+## 💠 语法
 
 ```js
 var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
@@ -15,7 +15,7 @@ var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
 - `thisArg` [可选] - 当执行回调函数 callback 时，用作 this 的值
 - 返回值 - 一个新的、由通过检测的元素组成的数组，如果没有任何数组元素通过检测，则返回空数组。
 
-### ✍️ 实现
+## ✍️ 实现
 
 ```js
 Array.prototype.myFilter = function (callback, context) {
@@ -29,7 +29,7 @@ Array.prototype.myFilter = function (callback, context) {
 };
 ```
 
-### 📌 测试
+## 📌 测试
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -39,6 +39,6 @@ console.log(newVal); // [4, 5]
 
 ---
 
-### 🔗 参考链接
+## 🔗 参考
 
 - [[MDN] Array.prototype.filter()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)

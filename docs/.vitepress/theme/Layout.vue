@@ -8,7 +8,7 @@ const { Layout } = DefaultTheme
   <Layout>
     <template #page-bottom>
       <Giscus
-        repo="lencx/js-wheel"
+        repo="lencx/code-snippets"
         repoId="MDEwOlJlcG9zaXRvcnkzODU4MTc0MjM="
         category="Comment"
         categoryId="DIC_kwDOFv8bT84B_ES3"

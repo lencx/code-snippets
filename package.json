@@ -1,7 +1,7 @@
 {
-  "name": "js-wheel",
+  "name": "code-snippets",
   "version": "1.0.0",
-  "description": "JavaScript 手写系列",
+  "description": "✍️ code - 手写系列",
   "author": "lencx <cxin11314@gmial.com>",
   "license": "CC0 1.0",
   "scripts": {
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lencx/js-wheel"
+    "url": "https://github.com/lencx/code-snippets"
   },
-  "homepage": "https://github.com/lencx/js-wheel",
+  "homepage": "https://github.com/lencx/code-snippets",
   "devDependencies": {
     "jest": "^27.0.6",
     "sass": "^1.38.1",
