@@ -37,6 +37,7 @@ function getPosts() {
     { text: 'Guide', link: '/posts/guide/' },
     {
       text: 'Article',
+      collapsable: true,
       children: [
         { text: 'This 关键字详解', link: '/posts/this/' },
       ],

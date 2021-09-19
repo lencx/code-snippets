@@ -1,10 +1,14 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
 import { Giscus } from '@giscus/vue'
+
+import ScrollProgress from '../components/ScrollProgress'
+
 const { Layout } = DefaultTheme
 </script>
 
 <template>
+  <ScrollProgress theme="#f89" />
   <Layout>
     <template #page-bottom>
       <Giscus
