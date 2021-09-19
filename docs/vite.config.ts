@@ -16,12 +16,12 @@ export default {
         icons: [
           {
             src: '/pwa-128x128.png',
-            sizes: '192x192',
+            sizes: '128x128',
             type: 'image/png',
           },
           {
             src: '/pwa-144x144.png',
-            sizes: '192x192',
+            sizes: '144x144',
             type: 'image/png',
           },
           {
@@ -31,7 +31,7 @@ export default {
           },
           {
             src: '/pwa-256x256.png',
-            sizes: '192x192',
+            sizes: '256x256',
             type: 'image/png',
           },
           {
