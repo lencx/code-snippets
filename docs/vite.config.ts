@@ -7,6 +7,8 @@ export default {
     vueJsx(),
     VitePWA({
       outDir: '.vitepress/dist',
+      registerType: 'autoUpdate',
+      injectRegister: 'inline',
       manifest: {
         name: '✍️ </>',
         short_name: 'CodeSnippets',
