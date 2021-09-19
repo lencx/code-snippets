@@ -11,7 +11,7 @@ export default {
       injectRegister: 'inline',
       manifest: {
         name: '✍️ </>',
-        short_name: 'CodeSnippets',
+        short_name: '✍️ </>',
         theme_color: '#ffffff',
         icons: [
           {
