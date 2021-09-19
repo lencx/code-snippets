@@ -1,7 +1,7 @@
 {
   "name": "code-snippets",
   "version": "1.0.0",
-  "description": "✍️ code - 手写系列",
+  "description": "✍️ code snippets - 手写系列",
   "author": "lencx <cxin11314@gmial.com>",
   "license": "CC0 1.0",
   "scripts": {
@@ -20,6 +20,7 @@
     "@vitejs/plugin-vue-jsx": "^1.1.8",
     "jest": "^27.0.6",
     "sass": "^1.38.1",
+    "vite-plugin-pwa": "^0.11.2",
     "vitepress": "^0.18.0"
   },
   "dependencies": {
