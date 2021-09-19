@@ -10,10 +10,12 @@ export default {
     watch(
       () => router.route.path,
       (path) => {
-        const _path = localStorage.getItem("URL_PATH", path);
-        if (_path !== path) {
-          localStorage.setItem("URL_PATH", path);
-          window.location.reload();
+        if (typeof window !== 'undefined') {
+          const _path = localStorage.getItem("URL_PATH", path);
+          if (_path !== path) {
+            localStorage.setItem("URL_PATH", path);
+            window.location.reload();
+          }
         }
       }
     );
