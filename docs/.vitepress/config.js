@@ -21,7 +21,7 @@ module.exports = {
     nav: [
       { text: 'Article', link: '/posts/guide/', activeMatch: '^/posts/' },
       { text: 'JavaScript', link: '/js/array/forEach/', activeMatch: '^/js/' },
-      { text: 'CSS', link: '/css/mixin/scss', activeMatch: '^/css/' },
+      { text: 'CSS', link: '/css/animation/scroll_progress_bar/', activeMatch: '^/css/' },
     ],
 
     sidebar: {
@@ -87,6 +87,12 @@ function getJS() {
 
 function getCss() {
   return [
+    {
+      text: 'Animation',
+      children: [
+        { text: 'Scroll Progress Bar', link: '/css/animation/scroll_progress_bar/' },
+      ],
+    },
     {
       text: 'Scss',
       children: [
