@@ -6,7 +6,8 @@
   "license": "CC0 1.0",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "build": "vitepress build docs && yarn pwa",
+    "pwa": "esno scripts/pwa.ts",
     "test": "jest",
     "watch": "jest --watchAll",
     "coverage": "jest --coverage"
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/lencx/code-snippets",
   "devDependencies": {
     "@vitejs/plugin-vue-jsx": "^1.1.8",
+    "esno": "^0.9.1",
     "jest": "^27.0.6",
     "sass": "^1.38.1",
     "vite-plugin-pwa": "^0.11.2",
