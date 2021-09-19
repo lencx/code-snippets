@@ -8,8 +8,8 @@ export default {
     VitePWA({
       outDir: '.vitepress/dist',
       manifest: {
-        name: 'CodeSnippets',
-        short_name: 'code',
+        name: '✍️ </>',
+        short_name: 'CodeSnippets',
         theme_color: '#ffffff',
         icons: [
           {

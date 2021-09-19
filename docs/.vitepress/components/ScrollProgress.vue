@@ -11,19 +11,21 @@ const appHeight = ref(0)
 
 const rootNode = props.root || '#app'
 
-const targetNode = document.querySelector(rootNode)
-if (!targetNode) throw `'${rootNode}' is invalid`
-const config = { attributes: true, childList: false, subtree: true }
-const callback = function(mutationsList) {
-  // Use traditional 'for loops' for IE 11
-  for(let mutation of mutationsList) {
-    if (mutation.type === 'attributes') {
-      appHeight.value = document.documentElement.scrollHeight
+onMounted(() => {
+  const targetNode = document.querySelector(rootNode)
+  if (!targetNode) throw `'${rootNode}' is invalid`
+  const config = { attributes: true, childList: false, subtree: true }
+  const callback = function(mutationsList) {
+    // Use traditional 'for loops' for IE 11
+    for(let mutation of mutationsList) {
+      if (mutation.type === 'attributes') {
+        appHeight.value = document.documentElement.scrollHeight
+      }
     }
   }
-}
-const observer = new MutationObserver(callback)
-observer.observe(targetNode, config)
+  const observer = new MutationObserver(callback)
+  observer.observe(targetNode, config)
+})
 
 const listener = () => {
   const scrollProgress = root.value
@@ -34,6 +36,7 @@ const listener = () => {
 
 onMounted(() => window.addEventListener('scroll', listener))
 onUnmounted(() => window.removeEventListener('scroll', listener))
+
 </script>
 
 <template>

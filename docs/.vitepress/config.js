@@ -12,6 +12,8 @@ module.exports = {
     ['meta', { property: 'og:title', content: 'Code Snippets' }],
     ['meta', { property: 'og:image', content: 'https://code.lencx.tech/logo.png' }],
     ['meta', { property: 'og:description', content: '✍️ code snippets - 手写系列' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: 'https://code.lencx.tech/logo.png' }],
   ],
 
   themeConfig: {
@@ -20,8 +22,8 @@ module.exports = {
     repoLabel: '点 ⭐️ 不迷路',
     docsBranch: 'main',
     editLinks: true,
-    editLinkText: '编辑此页面',
-    lastUpdated: '最后更新时间',
+    editLinkText: 'Edit this page',
+    lastUpdated: 'Last Updated',
 
     nav: [
       { text: 'Article', link: '/posts/guide/', activeMatch: '^/posts/' },
