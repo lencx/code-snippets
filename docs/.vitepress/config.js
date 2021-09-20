@@ -30,13 +30,14 @@ module.exports = {
     nav: [
       { text: 'Article', link: '/posts/guide/', activeMatch: '^/posts/' },
       { text: 'JavaScript', link: '/js/array/forEach/', activeMatch: '^/js/' },
-      { text: 'CSS', link: '/css/animation/scroll_progress_bar/', activeMatch: '^/css/' },
+      { text: 'CSS', link: '/scss/mixin/', activeMatch: '^/s?css/' },
     ],
 
     sidebar: {
       '/posts/': getPosts(),
       '/js/': getJS(),
       '/css/': getCss(),
+      '/scss/': getCss(),
     }
   }
 }
@@ -46,8 +47,9 @@ function getPosts() {
     { text: 'Guide', link: '/posts/guide/' },
     {
       text: 'Article',
-      collapsable: true,
+      // collapsable: true,
       children: [
+        { text: 'Scroll Progress Bar', link: '/posts/scroll_progress_bar/' },
         { text: 'This 关键字详解', link: '/posts/this/' },
       ],
     }
@@ -96,16 +98,14 @@ function getJS() {
 
 function getCss() {
   return [
+    // {
+    //   text: 'CSS',
+    //   children: [],
+    // },
     {
-      text: 'Animation',
+      text: 'SCSS',
       children: [
-        { text: 'Scroll Progress Bar', link: '/css/animation/scroll_progress_bar/' },
-      ],
-    },
-    {
-      text: 'Scss',
-      children: [
-        { text: 'Mixin', link: '/css/mixin/scss' },
+        { text: 'Mixin', link: '/scss/mixin/' },
       ],
     },
   ]

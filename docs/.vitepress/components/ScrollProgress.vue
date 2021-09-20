@@ -67,7 +67,6 @@ onMounted(() => {
 
 const listener = () => {
   const scrollProgress = el.value
-
   const height = appHeight.value - document.documentElement.clientHeight
   const scrollTop = document.body.scrollTop || document.documentElement.scrollTop
   scrollProgress.style.width = `${(scrollTop / height) * 100}%`
