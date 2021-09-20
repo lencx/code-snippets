@@ -5,7 +5,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/logo.svg' }],
     // https://stackoverflow.com/questions/49568333/pwa-icons-are-not-used-in-ios-11-3
-    ['link', { rel: 'apple-touch-icon', size: '180x180', href: '/logo.png' }],
+    ['link', { rel: 'apple-touch-icon', size: '180x180', href: '/ios-180x180.png' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['meta', { name: 'msapplication-TileColor', content: '#3eaf7c' }],
