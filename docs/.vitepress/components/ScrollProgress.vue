@@ -2,33 +2,72 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({
-  root: String,
-  theme: String,
-});
+  root: {
+    type: String,
+    default: '#app',
+    required: false,
+  },
+  height: {
+    type: String,
+    default: '4px',
+    required: false,
+  },
+  theme: {
+    type: String,
+    default: '#3eaf7c',
+    required: false,
+    validator: (v: string) => {
+      document.head.style.color = v
+      const q = document.head.style.color
+      document.head.style.color = ''
+      return !!q
+    },
+  },
+  placement: {
+    type: String,
+    default: 'top',
+    required: false,
+    validator: (v: string) => {
+      if (!['top', 'bottom'].includes(v)) {
+        console.error(`[ScrollProgress(placement)] The value must match one of these strings: 'top' | 'bottom'`)
+        return false
+      }
+      return true
+    },
+  },
+  zIndex: {
+    type: [Number, String],
+    default: 10000,
+    required: false,
+    validator: (v: string) => /^-?[\d]+$/.test(v),
+  },
+})
 
-const root = ref(null)
+const el = ref(null)
 const appHeight = ref(0)
 
-const rootNode = props.root || '#app'
-
 onMounted(() => {
-  const targetNode = document.querySelector(rootNode)
-  if (!targetNode) throw `'${rootNode}' is invalid`
+  // Select the node that will be observed for mutations
+  const targetNode = document.querySelector(props.root)
+  if (!targetNode) return console.error(`[ScrollProgress(root)] '${props.root}' is invalid`)
+  // Options for the observer (which mutations to observe)
   const config = { attributes: true, childList: false, subtree: true }
-  const callback = function(mutationsList) {
+  // Create an observer instance linked to the callback function
+  const observer = new MutationObserver((mutationsList: MutationRecord[]) => {
     // Use traditional 'for loops' for IE 11
     for(let mutation of mutationsList) {
       if (mutation.type === 'attributes') {
         appHeight.value = document.documentElement.scrollHeight
       }
     }
-  }
-  const observer = new MutationObserver(callback)
+  })
+  // Start observing the target node for configured mutations
   observer.observe(targetNode, config)
 })
 
 const listener = () => {
-  const scrollProgress = root.value
+  const scrollProgress = el.value
+
   const height = appHeight.value - document.documentElement.clientHeight
   const scrollTop = document.body.scrollTop || document.documentElement.scrollTop
   scrollProgress.style.width = `${(scrollTop / height) * 100}%`
@@ -37,19 +76,26 @@ const listener = () => {
 onMounted(() => window.addEventListener('scroll', listener))
 onUnmounted(() => window.removeEventListener('scroll', listener))
 
+const style: any = {
+  background: props.theme,
+  zIndex: props.zIndex,
+  height: props.height,
+}
+
+if (props.placement === 'top') style.top = 0
+if (props.placement === 'bottom') style.bottom = 0
+
+defineExpose({ style })
 </script>
 
 <template>
-  <div ref="root" :style="{ background: props.theme }" id="scroll_progress" />
+  <div id="scroll_progress" ref="el" :style="style" />
 </template>
 
 <style scoped>
 #scroll_progress {
   position: fixed;
-  top: 0;
   width: 0%;
-  height: 4px;
-  background: #48a5bd;
-  z-index: 10000;
+  transition: width 300ms ease-out;
 }
 </style>

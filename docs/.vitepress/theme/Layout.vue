@@ -8,7 +8,7 @@ const { Layout } = DefaultTheme
 </script>
 
 <template>
-  <ScrollProgress theme="#3eaf7c" />
+  <ScrollProgress />
   <Layout>
     <template #page-bottom>
       <Giscus
