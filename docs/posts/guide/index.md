@@ -2,8 +2,9 @@
 
 ## 类别
 
-- [JavaScript](../../js/array/forEach/) - JS 常用方法实现
-- [CSS](../../css/mixin/scss) - CSS 常用方法实现
+- [Article](../../posts/scroll_progress_bar/) - 瞎折腾 / 笔记
+- [JavaScript](../../js/array/forEach/) - JS 实现系列
+- [CSS](../../scss/mixin/) - CSS 实现系列
 
 ## 参考
 

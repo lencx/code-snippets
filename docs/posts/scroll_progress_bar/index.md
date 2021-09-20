@@ -37,7 +37,7 @@ window.addEventListener('scroll', () => {
 
 ## ✍️ 实现
 
-### Vue3
+### 🔶 Vue3
 
 `ScrollProgress.vue`
 
