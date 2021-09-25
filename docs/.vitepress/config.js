@@ -30,12 +30,16 @@ module.exports = {
     nav: [
       { text: 'Article', link: '/posts/guide/', activeMatch: '^/posts/' },
       { text: 'JavaScript', link: '/js/array/forEach/', activeMatch: '^/js/' },
+      { text: 'React', link: '/react/send_code/', activeMatch: '^/react/' },
+      { text: 'Vue', link: '/vue/scroll_progress_bar/', activeMatch: '^/vue/' },
       { text: 'CSS', link: '/scss/mixin/', activeMatch: '^/s?css/' },
     ],
 
     sidebar: {
       '/posts/': getPosts(),
       '/js/': getJS(),
+      '/react/': getReact(),
+      '/vue/': getVue(),
       '/css/': getCss(),
       '/scss/': getCss(),
     }
@@ -49,7 +53,6 @@ function getPosts() {
       text: 'Article',
       // collapsable: true,
       children: [
-        { text: 'Scroll Progress Bar', link: '/posts/scroll_progress_bar/' },
         { text: 'This 关键字详解', link: '/posts/this/' },
       ],
     }
@@ -93,6 +96,28 @@ function getJS() {
         { text: 'getURLParameters', link: '/js/browser/getURLParameters/' },
       ],
     }
+  ]
+}
+
+function getReact() {
+  return [
+    {
+      text: 'React',
+      children: [
+        { text: 'SendCode', link: '/react/send_code/' },
+      ],
+    },
+  ]
+}
+
+function getVue() {
+  return [
+    {
+      text: 'Vue3',
+      children: [
+        { text: 'ScrollProgress', link: '/vue/scroll_progress_bar/' },
+      ],
+    },
   ]
 }
 

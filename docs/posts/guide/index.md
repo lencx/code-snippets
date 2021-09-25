@@ -2,7 +2,7 @@
 
 ## 类别
 
-- [Article](../../posts/scroll_progress_bar/) - 瞎折腾 / 笔记
+- [Article](../../posts/this/) - 瞎折腾 / 笔记
 - [JavaScript](../../js/array/forEach/) - JS 实现系列
 - [CSS](../../scss/mixin/) - CSS 实现系列
 
